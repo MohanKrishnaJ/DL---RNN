@@ -35,10 +35,6 @@ Predict on test data, plot actual vs. predicted prices.
 
 ## PROGRAM
 
-### Name: Pragatheeshraaj D
-
-### Register Number: 212224230199
-
 ```python
 import numpy as np
 import pandas as pd
@@ -133,7 +129,7 @@ def train_model(model, train_loader, criterion, optimizer, epochs=20):
         total_loss += loss.item()
     train_losses.append(total_loss / len(train_loader))
   print(f'Epoch {epoch+1}/{epochs}, Loss: {total_loss / len(train_loader):.4f}')
-  print('Name: Pragatheeshraaj D')
+  print('Name: Sajen Murali')
   print('Register Number: 212224230199')
   plt.plot(train_losses, label='Training Loss')
   plt.xlabel('Epoch')
@@ -153,8 +149,8 @@ predicted_prices = scaler.inverse_transform(predicted)
 actual_prices = scaler.inverse_transform(actual)
 
 # Plot the predictions vs actual prices
-print('Name: Pragatheeshraaj D')
-print('Register Number: 212224230199')
+print('Name:Sajen Murali')
+print('Register Number: 212223220089')
 plt.figure(figsize=(10, 6))
 plt.plot(actual_prices, label='Actual Price')
 plt.plot(predicted_prices, label='Predicted Price')
@@ -177,12 +173,10 @@ print(f'Actual Price: {actual_prices[-1]}')
 
 ![image alt](https://github.com/SajenMurali/DL---RNN/blob/488a2cda33b9f4a675167671159a7bd35ab6ddc7/Screenshot%202026-03-15%20220244.png)
 
-## True Stock Price, Predicted Stock Price vs time
+## True Stock Price, Predicted Stock Price vs time and Predictions
 
-<img width="1202" height="723" alt="image" src="https://github.com/user-attachments/assets/6be09417-107b-4230-ad00-ff76a82d668c" />
+![image alt](https://github.com/SajenMurali/DL---RNN/blob/488a2cda33b9f4a675167671159a7bd35ab6ddc7/Screenshot%202026-03-15%20220258.png)
 
-### Predictions
-<img width="1177" height="44" alt="image" src="https://github.com/user-attachments/assets/2136ae9f-f732-4bb5-bb87-942bc4ac853f" />
 
 ## RESULT
 Thi program has been executed successfully.
